@@ -14,6 +14,7 @@
     </style>
 </head>
 <body >
+@include('layouts.navbar')
 @foreach($posts as $key => $post)
 {{--<div class="bg-white py-24 sm:py-32">--}}
 
