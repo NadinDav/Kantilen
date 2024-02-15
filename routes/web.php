@@ -16,9 +16,15 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/about', function (){
+Route::get('/about', function () {
     return view('layouts.about');
 });
 
-Route::get('/posts', [App\Http\Controllers\PostController::class, 'index'])->name('posts');
+Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
+    Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
+});
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
