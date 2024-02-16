@@ -24,7 +24,17 @@ Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
     Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
 });
 
+Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'], function (){
+    Route::group(['namespace'=>'Main'], function () {
+        Route::get('/', \App\Http\Controllers\Admin\Main\PostController::class);
+    });
+
+    Route::group(['namespace' => 'Category', 'prefix' => 'categories'], function () {
+        Route::get('/', \App\Http\Controllers\Admin\Category\PostController::class);
+        Route::get('/create', \App\Http\Controllers\Admin\Category\CreateController::class);
+    });
+});
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
