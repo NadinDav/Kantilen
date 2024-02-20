@@ -8,6 +8,14 @@
                 <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                 <li class="nav-item">
+                    <a href="/admin/posts" class="nav-link">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Новости
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="/admin/categories" class="nav-link">
                         <i class="nav-icon fas fa-th-list"></i>
                         <p>

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="{{ asset('assets/vendors/flag-icon-css/css/flag-icon.min.css') }}">
     <link rel="stylesheet" href="{{asset('assets/vendors/font-awesome/css/all.min.css')}}">
     <link href="{{asset('assets/vendors/aos/aos.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
+
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <script src="{{asset('assets/vendors/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/loader.js')}}"></script>
@@ -138,10 +140,18 @@
         </div>
     </div>
 </footer>
+<script src="{{asset('plugins/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('plugins/jquery-ui/jquery-ui.min.js')}}"></script>
+<!-- Bootstrap 4 -->
+<script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<!-- AdminLTE App -->
+<script src="{{asset('dist/js/adminlte.min.js')}}"></script>
+<!-- Summernote -->
 <script src="{{asset('assets/vendors/popper.js/popper.min.js')}}"></script>
 <script src="{{asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/vendors/aos/aos.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
+<script src="{{asset('dist/js/demo.js')}}"></script>
 <script>
     AOS.init({
         duration: 2000
