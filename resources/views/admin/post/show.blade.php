@@ -46,6 +46,15 @@
                                             <td>Название</td>
                                             <td>{{$post->title}}</td>
                                         </tr>
+                                        <tr>
+                                            <td>Описание</td>
+                                            <td>{{$post->content}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Фотографии</td>
+                                            <td><img src="{{ asset('storage/' . $post->preview_image)}}" alt="main_image" class="w-25">
+                                            <img src="{{ asset('storage/' . $post->main_image)}}" alt="main_image" class="w-25"></td>
+                                        </tr>
                                         </tbody>
                                     </table>
                                 </div>

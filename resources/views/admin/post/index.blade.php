@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12">
                         <div class="card">
                             <!-- /.card-header -->
                             <div class="card-body table-responsive p-0">
@@ -38,7 +38,8 @@
                                     <tr>
                                         <th>ID</th>
                                         <th>Название</th>
-                                        <th colspan="3" class="text-center">Действия</th>
+                                        <th>Описание</th>
+                                        <th colspan="4" class="text-center">Действия</th>
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -46,6 +47,7 @@
                                         <tr>
                                             <td>{{$post->id}}</td>
                                             <td>{{$post->title}}</td>
+                                            <td>{{$post->content}}</td>
                                             <td><a href="{{route('admin.post.show', $post->id)}}"><i
                                                         class="far fa-eye"></i></a></td>
                                             <td><a href="{{route('admin.post.edit', $post->id)}}"

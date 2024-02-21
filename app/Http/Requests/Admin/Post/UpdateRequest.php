@@ -22,7 +22,30 @@ class UpdateRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'title' => 'required|string'
+            'title' => 'required|string',
+            'content' => 'required|string',
+            'preview_image' => 'nullable|file',
+            'main_image' => 'nullable|file',
+            'category_id' => 'required|integer|exists:categories,id',
+            'tag_ids' => 'nullable|array',
+            'tag_ids.*' => 'nullable|integer|exists:tags,id'
+        ];
+    }
+    public function messages()
+    {
+        return [
+            'title.required'=> 'Это поле необходимо для заполения',
+            'title.string'=> 'Данные должные соответствовать строчному типу',
+            'content.required'=> 'Это поле необходимо для заполнения',
+            'content.string'=> 'Данные должные соответствовать строчному типу',
+            'preview_image.required'=> 'Это поле необходимо для заполения',
+            'preview_image.file'=> 'Необходимо выбрать файл',
+            'main_image.file'=> 'Необходимо выбрать файл',
+            'main_image.required'=> 'Это поле необходимо для заполения',
+            'category_id.required'=> 'Это поле необходимо для заполения',
+            'category_id.integer'=> 'ID категории должен быть числом',
+            'category_id.exists'=> 'ID категории должен быть в базе данных',
+            'tag_ids.array'=> 'Необходимо отправить массив данных',
         ];
     }
 }

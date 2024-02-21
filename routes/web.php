@@ -42,6 +42,7 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'],
     });
 
     Route::group(['namespace' => 'Tag', 'prefix' => 'tags'], function () {
+//        Route::resources(['tags'=> 'PostController']);
 
         Route::get('/', 'PostController')->name('admin.tag.index');
         Route::get('/create', 'PostController@create')->name('admin.tag.create');

@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="{{asset('plugins/summernote/summernote-bs5.min.css')}}" rel="stylesheet">
     <!-- Theme style -->
+    <link rel="stylesheet" href="{{ asset('plugins/select2/css/select2.min.css') }}">
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="{{ asset('plugins/overlayScrollbars/css/OverlayScrollbars.min.css') }}">
@@ -26,7 +27,8 @@
 
     <!-- Preloader -->
     <div class="preloader flex-column justify-content-center align-items-center">
-        <img class="animation__shake" src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60" width="60">
+        <img class="animation__shake" src="{{ asset('dist/img/AdminLTELogo.png') }}" alt="AdminLTELogo" height="60"
+             width="60">
     </div>
 
     <!-- Navbar -->
@@ -47,9 +49,6 @@
     <footer class="main-footer">
         <strong>Copyright &copy;Davydko Nadzeya 2024.</strong>
         All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-            <b>Version</b> 3.2.0
-        </div>
     </footer>
 
     <!-- Control Sidebar -->
@@ -73,13 +72,15 @@
 <script src="{{asset('plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- daterangepicker -->
 <script src="{{asset('plugins/moment/moment.min.js')}}"></script>
+<script src="{{asset('plugins/select2/js/select2.full.min.js')}}"></script>
 <script src="{{asset('plugins/daterangepicker/daterangepicker.js')}}"></script>
 <!-- overlayScrollbars -->
 <script src="{{asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('dist/js/adminlte.js')}}"></script>
+<script src="{{asset('plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
         // Summernote
         $('#summernote').summernote({
             toolbar: [
@@ -93,6 +94,23 @@
             ]
         });
     });
+    $(function () {
+        bsCustomFileInput.init();
+    });
+        $(function () {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+
+            //Initialize Select2 Elements
+            $('.select2bs4').select2({
+                theme: 'bootstrap4'
+            });
+        })
 </script>
+<style>
+    .custom-file-input:lang(en) ~ .custom-file-label::after {
+        content: "...";
+    }
+</style>
 </body>
 </html>
