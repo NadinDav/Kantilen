@@ -65,6 +65,30 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'],
         Route::delete('/{post}', 'PostController@destroy')->name('admin.post.destroy');
 
     });
+
+    Route::group(['namespace' => 'Image', 'prefix' => 'images'], function () {
+
+        Route::get('/', 'PostController')->name('admin.image.index');
+        Route::get('/create', 'PostController@create')->name('admin.image.create');
+        Route::post('/', 'PostController@store')->name('admin.image.store');
+        Route::get('/{image}', 'PostController@show')->name('admin.image.show');
+        Route::get('/{image}/edit', 'PostController@edit')->name('admin.image.edit');
+        Route::patch('/{image}', 'PostController@update')->name('admin.image.update');
+        Route::delete('/{image}', 'PostController@destroy')->name('admin.image.destroy');
+
+    });
+
+    Route::group(['namespace' => 'User', 'prefix' => 'users'], function () {
+
+        Route::get('/', 'PostController')->name('admin.user.index');
+        Route::get('/create', 'PostController@create')->name('admin.user.create');
+        Route::post('/', 'PostController@store')->name('admin.user.store');
+        Route::get('/{user}', 'PostController@show')->name('admin.user.show');
+        Route::get('/{user}/edit', 'PostController@edit')->name('admin.user.edit');
+        Route::patch('/{user}', 'PostController@update')->name('admin.user.update');
+        Route::delete('/{user}', 'PostController@destroy')->name('admin.user.destroy');
+
+    });
 });
 
 Auth::routes();

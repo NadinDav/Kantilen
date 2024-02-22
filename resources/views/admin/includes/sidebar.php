@@ -31,6 +31,22 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/admin/images" class="nav-link">
+                        <i class="nav-icon fa solid fa-image"></i>
+                        <p>
+                            Галерея
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/admin/users" class="nav-link">
+                        <i class="nav-icon fa solid fa-user"></i>
+                        <p>
+                            Пользователи
+                        </p>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>
