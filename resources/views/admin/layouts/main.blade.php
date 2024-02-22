@@ -41,7 +41,6 @@
         </ul>
     </nav>
     <!-- /.navbar -->
-
     @include('admin.includes.sidebar')
     <!-- Content Wrapper. Contains page content -->
     @yield('content')

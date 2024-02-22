@@ -29,9 +29,9 @@
                             @csrf
                             @method('PATCH')
                             <div class="form-group">
-                                <input type="text" class="form-control" name="title" placeholder="Название пользователя"
-                                value="{{ $user->title }}">
-                                @error('title')
+                                <input type="text" class="form-control" name="name" placeholder="Имя пользователя"
+                                value="{{ $user->name }}">
+                                @error('name')
                                 <div class="text-danger">Это поле не может быть пустым!</div>
                                 @enderror
                             </div>

@@ -43,8 +43,8 @@
                                             <td>{{$user->id}}</td>
                                         </tr>
                                         <tr>
-                                            <td>Название</td>
-                                            <td>{{$user->title}}</td>
+                                            <td>Имя</td>
+                                            <td>{{$user->name}}</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -56,7 +56,6 @@
                     </div>
                 </div>
                 <!-- ./col -->
-
             <!-- /.container-fluid -->
         </section>
         <!-- /.content -->

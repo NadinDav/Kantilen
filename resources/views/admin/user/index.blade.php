@@ -25,7 +25,7 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-1 mb-3">
-                        <a href="user/create" class="btn btn-block btn-primary">Добавить</a>
+                        <a href="users/create" class="btn btn-block btn-primary">Добавить</a>
                     </div>
                 </div>
                 <div class="row">
@@ -37,7 +37,7 @@
                                     <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Название</th>
+                                        <th>Имя</th>
                                         <th colspan="3" class="text-center">Действия</th>
                                     </tr>
                                     </thead>
@@ -45,7 +45,7 @@
                                     @foreach($users as $key => $user)
                                         <tr>
                                             <td>{{$user->id}}</td>
-                                            <td>{{$user->title}}</td>
+                                            <td>{{$user->name}}</td>
                                             <td><a href="{{route('admin.user.show', $user->id)}}"><i
                                                         class="far fa-eye"></i></a></td>
                                             <td><a href="{{route('admin.user.edit', $user->id)}}"
@@ -71,9 +71,6 @@
                 </div>
             </div>
             <!-- ./col -->
-
-
-    </div>
     <!-- /.container-fluid -->
     </section>
     <!-- /.content -->

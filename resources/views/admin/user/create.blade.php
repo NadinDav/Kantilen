@@ -28,8 +28,8 @@
                         <form action="{{route('admin.user.store')}}" method="post" class="w-25">
                             @csrf
                             <div class="form-group">
-                                <input type="text" class="form-control" name="title" placeholder="Название пользователя">
-                                @error('title')
+                                <input type="text" class="form-control" name="name" placeholder="Имя пользователя">
+                                @error('name')
                                 <div class="text-danger">Это поле не может быть пустым!</div>
                                 @enderror
                             </div>
