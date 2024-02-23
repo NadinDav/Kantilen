@@ -17,10 +17,6 @@ class PostController extends Controller
 {
     public function __invoke()
     {
-        return view('admin.layouts.main');
-    }
-
-    public function index(){
         return view('admin.main.index');
     }
 

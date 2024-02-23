@@ -6,7 +6,7 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6 d-flex align-items-center">
-                        <h1 class="m-0 mr-2">{{ $user->title }}</h1>
+                        <h1 class="m-0 mr-2">{{ $user->name }}</h1>
                         <a href="{{route('admin.user.edit', $user->id)}}" class="text-success"><i class="fas fa-pencil-alt mt-2"></i></a>
                         <form action="{{route('admin.user.destroy', $user->id)}}" method="post">
                             @csrf
@@ -18,8 +18,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item active">Просмотр пользователя "{{$user->name}}"</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -45,6 +44,14 @@
                                         <tr>
                                             <td>Имя</td>
                                             <td>{{$user->name}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td>{{$user->email}}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Доступ</td>
+                                            <td>{{$user->role}}</td>
                                         </tr>
                                         </tbody>
                                     </table>

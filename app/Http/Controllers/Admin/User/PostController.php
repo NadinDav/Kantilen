@@ -9,6 +9,8 @@ use App\Models\PostTag;
 use App\Models\Category;
 use App\Models\Post;
 use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Testing\Fluent\Concerns\Has;
 
 class PostController extends Controller
 {
@@ -20,32 +22,41 @@ class PostController extends Controller
 
     public function create()
     {
-        return view('admin.user.create');
+        $roles = User::getRoles();
+        return view('admin.user.create' , compact('roles'));
     }
 
     public function store(StoreRequest $request)
     {
         $data = $request->validated();
-        User::firstOrCreate($data);
+        $data['password'] = Hash::make($data['password']);
+        User::firstOrCreate(['email' => $data['email']], $data);
         return redirect()->route('admin.user.index');
     }
 
-    public function show(User $user){
+    public function show(User $user)
+    {
         return view('admin.user.show', compact('user'));
 
     }
 
-    public function edit(User $user){
-        return view('admin.user.edit', compact('user'));
+    public function edit(User $user)
+    {
+        $roles = User::getRoles();
+        return view('admin.user.edit', compact('user', 'roles'));
     }
-    public function update(UpdateRequest $request, User $user){
+
+    public function update(UpdateRequest $request, User $user)
+    {
+        $roles = User::getRoles();
         $data = $request->validated();
         $user->update($data);
-        return view('admin.user.show', compact('user'));
+        return view('admin.user.show', compact('user', 'roles'));
     }
 
-    public function destroy(User $user){
-        $user ->delete();
+    public function destroy(User $user)
+    {
+        $user->delete();
         return redirect()->route('admin.user.index');
     }
 

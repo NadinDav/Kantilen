@@ -10,8 +10,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item active">Создание пользователя</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -24,13 +23,39 @@
             <div class="container-fluid">
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-11">
                         <form action="{{route('admin.user.store')}}" method="post" class="w-25">
                             @csrf
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Имя пользователя">
                                 @error('name')
-                                <div class="text-danger">Это поле не может быть пустым!</div>
+                                <div class="text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" placeholder="E-mail">
+                                @error('email')
+                                <div class="text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="password" placeholder="Пароль">
+                                @error('password')
+                                <div class="text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-100">
+                                <label>Выберите доступ</label>
+                                <select name="role" class="form-control">
+                                    @foreach($roles as $id => $role)
+                                        <option value="{{$id}}"
+                                            {{ $id == old('role_id') ? ' selected' : '' }}
+                                        >{{$role}}</option>
+                                    @endforeach
+
+                                </select>
+                                @error('role')
+                                <div class="text-danger">{{ $message }}</div>
                                 @enderror
                             </div>
                             <input type="submit" class="btn btn-primary" value="Добавить">

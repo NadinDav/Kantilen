@@ -24,10 +24,10 @@ Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
     Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
 });
 
-Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin'], function (){
+Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'middleware' => ['auth','admin']], function (){
     Route::group(['namespace'=>'Main'], function () {
         Route::get('/', \App\Http\Controllers\Admin\Main\PostController::class);
-        Route::get('/admin', 'PostController')->name('admin.main.index');
+
     });
 
     Route::group(['namespace' => 'Category', 'prefix' => 'categories'], function () {

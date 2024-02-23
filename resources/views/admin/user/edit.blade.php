@@ -10,8 +10,7 @@
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item active">Редактирование пользователя "{{$user->name}}"</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -30,10 +29,34 @@
                             @method('PATCH')
                             <div class="form-group">
                                 <input type="text" class="form-control" name="name" placeholder="Имя пользователя"
-                                value="{{ $user->name }}">
+                                       value="{{ $user->name }}">
                                 @error('name')
-                                <div class="text-danger">Это поле не может быть пустым!</div>
+                                <div class="text-danger">{{$message}}</div>
                                 @enderror
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" placeholder="E-mail"
+                                       value="{{ $user->email }}">
+                                @error('email')
+                                <div class="text-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-100">
+                                <label>Выберите доступ</label>
+                                <select name="role" class="form-control">
+                                    @foreach($roles as $id => $role)
+                                        <option value="{{$id}}"
+                                            {{ $id == $user->role ? ' selected' : '' }}
+                                        >{{$role}}</option>
+                                    @endforeach
+
+                                </select>
+                                @error('role')
+                                <div class="text-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
+                            <div class="form-group w-50">
+                                <input type="hidden" name="user_id" value="{{ $user->id }}">
                             </div>
                             <input type="submit" class="btn btn-primary" value="Обновить">
                         </form>
