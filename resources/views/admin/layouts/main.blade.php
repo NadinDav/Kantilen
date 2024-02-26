@@ -44,6 +44,7 @@
                 <li class="nav-item">
                     <form action="{{ route('logout') }}" method="post">
                         @csrf
+                        @method('POST')
                         <input class="btn btn-outline-primary" type="submit" value="Выйти">
                     </form>
                 </li>

@@ -22,6 +22,8 @@ Route::get('/about', function () {
 
 Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
     Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
+    Route::get('/image', 'PostController@index');
+    Route::get('/video', 'PostController@show');
 });
 
 Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'middleware' => ['auth','admin']], function (){

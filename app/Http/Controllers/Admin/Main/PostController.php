@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin\Main;
 
 use App\Http\Controllers\Controller;
+use App\Models\Image;
 use App\Models\Post;
 
 use App\Http\Requests\Admin\Post\StoreRequest;
@@ -17,7 +18,12 @@ class PostController extends Controller
 {
     public function __invoke()
     {
-        return view('admin.main.index');
+        $data = [];
+        $data['userCount'] = User::all()->count();
+        $data['postsCount'] = Post::all()->count();
+        $data['categoriesCount'] = Category::all()->count();
+        $data['imagesCount'] = Image::all()->count();
+        return view('admin.main.index', compact('data'));
     }
 
 }

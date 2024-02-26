@@ -18,7 +18,7 @@
 <div class="edica-loader"></div>
 <header class="edica-header">
 <div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}" alt="Кантилена" style="width: 40%"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -32,17 +32,17 @@
                     <a class="nav-link" href="/about">О нас</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Новости</a>
                     <div class="dropdown-menu" aria-labelledby="blogDropdown">
                         <a class="dropdown-item" href="/posts">Новости</a>
                         <a class="dropdown-item" href="blog-single.html">Blog Post</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Медиа</a>
                     <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <a class="dropdown-item" href="404.html">404</a>
-                        <a class="dropdown-item" href="coming-soon.html">Coming Soon</a>
+                        <a class="dropdown-item" href="/image">Галерея</a>
+                        <a class="dropdown-item" href="/video">Видео</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -51,11 +51,17 @@
             </ul>
             <ul class="navbar-nav mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><span class="flag-icon flag-icon-squared rounded-circle flag-icon-gb"></span> Eng</a>
+                    <a class="nav-link" href="{{route('login')}}">Войти</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Download</a>
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
+                        @method('POST')
+                        <input class="btn btn-outline-primary" type="submit" value="Выйти">
+                    </form>
                 </li>
+
+
             </ul>
         </div>
     </nav>
