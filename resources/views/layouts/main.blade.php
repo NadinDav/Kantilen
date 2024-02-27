@@ -47,20 +47,18 @@
                     <a class="nav-link" href="/contacts">Контакты</a>
                 </li>
             </ul>
-            <ul class="navbar-nav mt-2 mt-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="{{route('login')}}">Войти</a>
-                </li>
-                <li class="nav-item">
-                    <form action="{{ route('logout') }}" method="post">
-                        @csrf
-                        @method('POST')
-                        <input class="btn btn-outline-primary" type="submit" value="Выйти">
-                    </form>
-                </li>
-
-
-            </ul>
+{{--            <ul class="navbar-nav mt-2 mt-lg-0">--}}
+{{--                <li class="nav-item">--}}
+{{--                    <a class="nav-link" href="{{route('login')}}">Войти</a>--}}
+{{--                </li>--}}
+{{--                <li class="nav-item">--}}
+{{--                    <form action="{{ route('logout') }}" method="post">--}}
+{{--                        @csrf--}}
+{{--                        @method('POST')--}}
+{{--                        <input class="btn btn-outline-primary" type="submit" value="Выйти">--}}
+{{--                    </form>--}}
+{{--                </li>--}}
+{{--            </ul>--}}
         </div>
     </nav>
 </div>

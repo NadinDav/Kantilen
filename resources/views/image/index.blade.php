@@ -6,10 +6,10 @@
             <section class="featured-posts-section">
                 <div class="row">
                     @foreach($images as $image)
-                        <div class="col-sm-3" data-aos="fade-up">
+                        <div class="col-md-4 blog-post mb-1" data-aos="fade-up">
                             <div class="blog-post-thumbnail-wrapper">
                                 <a href="{{ asset('storage/' . $image->image)}}?text={{$image->title}}" data-toggle="lightbox"
-                                   data-gallery="example-gallery" class="col-sm-4">
+                                   data-gallery="example-gallery" class="w-100">
                                     <img src="{{ asset('storage/' . $image->image)}}?text={{$image->title}}" class="img-fluid" alt="image">
                                 </a>
                             </div>
