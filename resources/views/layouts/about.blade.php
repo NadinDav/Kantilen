@@ -1,16 +1,21 @@
 @extends('layouts.main')
 @section('content')
-    <main class="mb-5">
+    <main class="blog-post mb-5">
         <div class="container">
             <div class="row">
                 <div class="col-lg-11 mx-auto">
                     <h1 class="edica-page-title" data-aos="fade-up">О нас</h1>
                     <section class="edica-about-intro py-5">
                         <div class="row">
-                            <div class="col-md-6" data-aos="fade-right" data-aos-delay="150">
-                                <h2 class="intro-title pb-3 pb-md-0 mb-4 mb-md-0">Quick & Easy Process <span>with best features</span>
+{{--                            <blockquote class="col-md-6" data-aos="fade-right" data-aos="fade-up">--}}
+{{--                                <p>You are safe here! I shouted above the sudden noise. She looked away from me downhill. The people were coming out of their houses, astonished.</p>--}}
+{{--                                <footer class="blockquote-footer">Oluchi Mazi</footer>--}}
+{{--                            </blockquote>--}}
+                            <blockquote class="col-md-6" data-aos="fade-right" data-aos-delay="150">
+                                <h2 class="intro-title pb-3 pb-md-0 mb-4 mb-md-0">«Хор – это высочайшее искусство и искренний разговор со слушателями»
                                 </h2>
-                            </div>
+                            <footer class="blockquote-footer">В.Н. Минин, профессор, создатель и бессменный художественный руководитель Московского государственного академического камерного хора</footer>
+                            </blockquote>
                             <div class="col-md-6 intro-content" data-aos="fade-left" data-aos-delay="150">
                                 <p><span class="first-letter">Д</span>етский хор «Кантилена»- это творческий коллектив
                                     детей в возрасте от 10 до 16 лет, которых обьединяет любовь к музыке, пению, к

@@ -11,9 +11,10 @@
                                 <img src="{{asset('storage/' . $post->preview_image)}}" alt="blog post">
                             </div>
                             <p class="blog-post-category">{{$post->category->title}}</p>
-                            <a href="#" class="blog-post-permalink">
+                            <a href="{{route('post.single', $post->id)}}" class="blog-post-permalink">
                                 <h6 class="blog-post-title">{{$post->title}}</h6>
                             </a>
+                            <p class="blog-post-category">{{$post->updated_at}}</p>
                         </div>
                     @endforeach
                 </div>
@@ -27,7 +28,7 @@
                                     <img src="{{asset('assets/images/blog_4.jpg')}}" alt="blog post">
                                 </div>
                                 <p class="blog-post-category">Blog post</p>
-                                <a href="#!" class="blog-post-permalink">
+                                <a href="/blog-single" class="blog-post-permalink">
                                     <h6 class="blog-post-title">Front becomes an official Instagram Marketing
                                         Partner</h6>
                                 </a>

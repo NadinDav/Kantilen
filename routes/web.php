@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,21 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/about', function () {
-    return view('layouts.about');
-});
 
-Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
-    Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
-    Route::get('/image', 'PostController@index');
-    Route::get('/video', 'PostController@show');
-});
-
-Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 'middleware' => ['auth','admin']], function (){
-    Route::group(['namespace'=>'Main'], function () {
+Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\Http\Controllers\Admin'], function () {
+    Route::group(['namespace' => 'Main'], function () {
         Route::get('/', \App\Http\Controllers\Admin\Main\PostController::class);
 
     });
@@ -93,7 +82,24 @@ Route::group(['namespace' => 'App\Http\Controllers\Admin', 'prefix' => 'admin', 
 
     });
 });
-
 Auth::routes();
 
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', function () {
+    return view('welcome');
+});
+Route::get('/about', function () {
+    return view('layouts.about');
+});
+Route::get('/video', function () {
+    return view('image.show');
+});
+Route::get('/contacts', function () {
+    return view('layouts.contacts');
+});
+Route::get('/image', \App\Http\Controllers\Main\ImageController::class);
+
+Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
+    Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
+    Route::get('/{post}', 'PostController@single')->name('post.single');
+});
+

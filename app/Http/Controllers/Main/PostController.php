@@ -14,15 +14,14 @@ class PostController extends Controller
         return view('post.index', compact('posts'));
     }
 
-    public function index()
-    {
-        $images = Image::paginate(9);
-        return view('image.index', compact('images'));
-    }
 
-    public function show()
-    {
-        return view('image.show');
+    public function single(Post $post){
 
+        return view('post.single', compact('post'));
     }
+//    public function index()
+//    {
+//        $images = Image::all();
+//        return view('image.index', compact('images'));
+//    }
 }

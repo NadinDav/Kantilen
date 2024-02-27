@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="{{asset('assets/vendors/font-awesome/css/all.min.css')}}">
     <link href="{{asset('assets/vendors/aos/aos.css')}}" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('dist/css/adminlte.min.css')}}">
-
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     <script src="{{asset('assets/vendors/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('assets/js/loader.js')}}"></script>
@@ -31,12 +30,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/about">О нас</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Новости</a>
-                    <div class="dropdown-menu" aria-labelledby="blogDropdown">
-                        <a class="dropdown-item" href="/posts">Новости</a>
-                        <a class="dropdown-item" href="blog-single.html">Blog Post</a>
-                    </div>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/posts">Новости</a>
+{{--                    <div class="dropdown-menu" aria-labelledby="blogDropdown">--}}
+{{--                        <a class="dropdown-item" href="/posts">Новости</a>--}}
+{{--                    </div>--}}
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Медиа</a>
@@ -46,7 +44,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
+                    <a class="nav-link" href="/contacts">Контакты</a>
                 </li>
             </ul>
             <ul class="navbar-nav mt-2 mt-lg-0">
@@ -157,7 +155,7 @@
 <script src="{{asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/vendors/aos/aos.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
-<script src="{{asset('dist/js/demo.js')}}"></script>
+{{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
 <script>
     AOS.init({
         duration: 2000
