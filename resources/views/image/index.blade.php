@@ -8,9 +8,9 @@
                     @foreach($images as $image)
                         <div class="col-md-4 blog-post mb-1" data-aos="fade-up">
                             <div class="blog-post-thumbnail-wrapper">
-                                <a href="{{ asset('storage/' . $image->image)}}?text={{$image->title}}" data-toggle="lightbox"
-                                   data-gallery="example-gallery" class="w-100">
-                                    <img src="{{ asset('storage/' . $image->image)}}?text={{$image->title}}" class="img-fluid" alt="image">
+                                <a href="{{ asset('storage/' . $image->image)}}" data-toggle="lightbox"
+                                   data-gallery="gallery" class="w-100">
+                                    <img src="{{ asset('storage/' . $image->image)}}" class="img-fluid" alt="{{$image->title}}">
                                 </a>
                             </div>
                         </div>

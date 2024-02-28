@@ -2,7 +2,7 @@
 @section('content')
 
     <header class="edica-header edica-landing-header">
-        <div class="container">
+{{--        <div class="container">--}}
     <div class="edica-landing-header-content">
         <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -12,54 +12,40 @@
             </ol>
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active">
-                    <div class="row">
-                        <div class="col-md-6 carousel-content-wrapper">
-                            <h1 >Get Started Power social proof for your brands.</h1>
-                            <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
-                            <div class="carousel-content-btns">
-                                <a href="#!" class="btn btn-success"> <i class="fab fa-apple mr-2"></i> App Store</a>
-                                <a href="#!" class="btn btn-secondary"> <i class="fab fa-android mr-2"></i>  Google Play</a>
-                            </div>
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{asset('img/фон1.jpg')}}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text">Last updated 3 mins ago</p>
                         </div>
-                        <div class="col-md-6 carousel-img-wrapper">
-                            <img src=" {{asset('assets/images/Slider_1.png')}} " alt="carousel-img" class="img-fluid" width="350px">
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="card bg-dark text-white">
+                        <img class="card-img" src="{{asset('img/фон4.jpg')}}" alt="Card image">
+                        <div class="card-img-overlay">
+                            <h1>Get Started Power social proof for your brands.</h1>
+                            <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <div class="row">
-                        <div class="col-md-6 carousel-content-wrapper">
-                            <h1>Get Started Power social proof for your brands.</h1>
-                            <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
-                            <div class="carousel-content-btns">
-                                <a href="#!" class="btn btn-success"> <i class="fab fa-apple mr-2"></i> App Store</a>
-                                <a href="#!" class="btn btn-secondary"> <i class="fab fa-android mr-2"></i> Google Play</a>
+                        <div class="card bg-dark text-white">
+                            <img class="card-img" src="{{asset('img/фон3.jpg')}}" alt="Card image">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text">Last updated 3 mins ago</p>
                             </div>
-                        </div>
-                        <div class="col-md-6 carousel-img-wrapper">
-                            <img src=" {{asset('assets/images/Slider_1.png')}} " alt="carousel-img" class="img-fluid" width="350px">
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="col-md-6 carousel-content-wrapper">
-                            <h1>Get Started Power social proof for your brands.</h1>
-                            <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
-                            <div class="carousel-content-btns">
-                                <a href="#!" class="btn btn-success"> <i class="fab fa-apple mr-2"></i> App Store</a>
-                                <a href="#!" class="btn btn-secondary"> <i class="fab fa-android mr-2"></i> Google Play</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 carousel-img-wrapper">
-                            <img src=" {{asset('assets/images/Slider_1.png')}} " alt="carousel-img" class="img-fluid" width="350px">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-        </div>
+{{--        </div>--}}
     </header>
 <main>
     <section class="edica-landing-section edica-landing-about">

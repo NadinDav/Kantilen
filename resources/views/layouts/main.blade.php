@@ -16,129 +16,101 @@
 <body>
 <div class="edica-loader"></div>
 <header class="edica-header">
-<div class="container">
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-        <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}" alt="Кантилена" style="width: 40%"></a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="edicaMainNav">
-            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/about">О нас</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/posts">Новости</a>
-{{--                    <div class="dropdown-menu" aria-labelledby="blogDropdown">--}}
-{{--                        <a class="dropdown-item" href="/posts">Новости</a>--}}
-{{--                    </div>--}}
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Медиа</a>
-                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <a class="dropdown-item" href="/image">Галерея</a>
-                        <a class="dropdown-item" href="/video">Видео</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contacts">Контакты</a>
-                </li>
-            </ul>
-{{--            <ul class="navbar-nav mt-2 mt-lg-0">--}}
-{{--                <li class="nav-item">--}}
-{{--                    <a class="nav-link" href="{{route('login')}}">Войти</a>--}}
-{{--                </li>--}}
-{{--                <li class="nav-item">--}}
-{{--                    <form action="{{ route('logout') }}" method="post">--}}
-{{--                        @csrf--}}
-{{--                        @method('POST')--}}
-{{--                        <input class="btn btn-outline-primary" type="submit" value="Выйти">--}}
-{{--                    </form>--}}
-{{--                </li>--}}
-{{--            </ul>--}}
-        </div>
-    </nav>
-</div>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+            <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}"
+                                                                             alt="Кантилена" style="width: 40%"></a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="edicaMainNav">
+                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">О нас</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/posts">Новости</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown"
+                           aria-haspopup="true" aria-expanded="false">Медиа</a>
+                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                            <a class="dropdown-item" href="/image">Галерея</a>
+                            <a class="dropdown-item" href="/video">Видео</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contacts">Контакты</a>
+                    </li>
+                    <li class="nav-item mt-lg-1 ml-4">
+                        <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
+                                                                                              style="color:black"></i></a>
+                    </li>
+                    <li class="nav-item mt-lg-1 ml-4">
+                        <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
+                                class="fas fa-globe" style="color:black"></i></a>
+                    </li>
+                </ul>
+                {{--            <ul class="navbar-nav mt-2 mt-lg-0">--}}
+                {{--                <li class="nav-item">--}}
+                {{--                    <a class="nav-link" href="{{route('login')}}">Войти</a>--}}
+                {{--                </li>--}}
+                {{--                <li class="nav-item">--}}
+                {{--                    <form action="{{ route('logout') }}" method="post">--}}
+                {{--                        @csrf--}}
+                {{--                        @method('POST')--}}
+                {{--                        <input class="btn btn-outline-primary" type="submit" value="Выйти">--}}
+                {{--                    </form>--}}
+                {{--                </li>--}}
+                {{--            </ul>--}}
+            </div>
+        </nav>
+    </div>
 </header>
-
 
 @yield('content')
 
-<section class="edica-footer-banner-section">
-    <div class="container">
-        <div class="footer-banner" data-aos="fade-up">
-            <h1 class="banner-title">Download it now.</h1>
-            <div class="banner-btns-wrapper">
-                <button class="btn btn-success"> <img src="{{asset('assets/images/apple@1x.svg')}}" alt="ios" class="mr-2"> App Store</button>
-                <button class="btn btn-success"> <img src="{{asset('assets/images/android@1x.svg')}}" alt="android" class="mr-2"> Google Play</button>
-            </div>
-            <p class="banner-text">Add some helper text here to explain the finer details of your <br> product or service.</p>
-        </div>
-    </div>
-</section>
-<footer class="edica-footer" data-aos="fade-up">
+<footer class="edica-footer mt-4" data-aos="fade-up">
     <div class="container">
         <div class="row footer-widget-area">
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <a href="/" class="footer-brand-wrapper">
-                    <img src="{{asset('assets/images/logo.svg')}}" alt="edica logo">
+                    <img src="{{asset('assets/images/kant.svg')}}" alt="logo">
                 </a>
-                <p class="contact-details">hello@edica.com</p>
-                <p class="contact-details">+23 3000 000 00</p>
+                <p class="contact-details">Образцовый хор "Кантилена"</p>
+                <p class="contact-details">kantilena-minsk@ya.ru</p>
                 <nav class="footer-social-links">
-                    <a href="#!"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#!"><i class="fab fa-twitter"></i></a>
-                    <a href="#!"><i class="fab fa-behance"></i></a>
-                    <a href="#!"><i class="fab fa-dribbble"></i></a>
+                    <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
+                                                                                          style="color:black"></i></a>
+                    <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
+                            class="fas fa-globe" style="color:black"></i></a>
                 </nav>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <nav class="footer-nav">
-                    <a href="#!" class="nav-link">Company</a>
-                    <a href="#!" class="nav-link">Android App</a>
-                    <a href="#!" class="nav-link">ios App</a>
-                    <a href="#!" class="nav-link">Blog</a>
-                    <a href="#!" class="nav-link">Partners</a>
-                    <a href="#!" class="nav-link">Careers</a>
+                    <a href="/" class="nav-link">Главная</a>
+                    <a href="/about" class="nav-link">О нас</a>
+                    <a href="/posts" class="nav-link">Новости</a>
+                    <a href="/image" class="nav-link">Галерея</a>
+                    <a href="/video" class="nav-link">Видео</a>
+                    <a href="/contacts" class="nav-link">Контакты</a>
                 </nav>
             </div>
-            <div class="col-md-3">
-                <nav class="footer-nav">
-                    <a href="#!" class="nav-link">FAQ</a>
-                    <a href="#!" class="nav-link">Reporting</a>
-                    <a href="#!" class="nav-link">Block Storage</a>
-                    <a href="#!" class="nav-link">Tools & Integrations</a>
-                    <a href="#!" class="nav-link">API</a>
-                    <a href="#!" class="nav-link">Pricing</a>
-                </nav>
-            </div>
-            <div class="col-md-3">
-                <div class="dropdown footer-country-dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="footerCountryDropdown" data-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                        <span class="flag-icon flag-icon-gb flag-icon-squared"></span> United Kingdom <i class="fas fa-chevron-down ml-2"></i>
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="footerCountryDropdown">
-                        <button class="dropdown-item" href="#">
-                            <span class="flag-icon flag-icon-us flag-icon-squared"></span> United States
-                        </button>
-                        <button class="dropdown-item" href="#">
-                            <span class="flag-icon flag-icon-au flag-icon-squared"></span> Australia
-                        </button>
-                    </div>
+            <div class="col-md-4">
+                <p>Образцовый хор "Кантилена"</p>
+                <p>г.Минск, ул.Пономаренко, 10</p>
+                <p>ГУО «Детская музыкальная школа искусств № 5 г. Минска»</p>
+                <div class="embed-responsive embed-responsive-1by1 contact-map w-50">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2351.1303160657203!2d27.48996307676528!3d53.89388767245311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdaadcb3de155%3A0x6e3eb7bf43da10cb!2z0JzRg9C30YvQutCw0LvRjNC90LDRjyDRiNC60L7Qu9CwIOKEliA1!5e0!3m2!1sru!2sby!4v1709036132342!5m2!1sru!2sby"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom-content">
-            <nav class="nav footer-bottom-nav">
-                <a href="#!">Privacy & Policy</a>
-                <a href="#!">Terms</a>
-                <a href="#!">Site Map</a>
-            </nav>
-            <p class="mb-0">© Edica. 2020 <a href="https://www.bootstrapdash.com" target="_blank" rel="noopener noreferrer" class="text-reset">bootstrapdash</a> . All rights reserved.</p>
         </div>
     </div>
 </footer>
@@ -153,7 +125,6 @@
 <script src="{{asset('assets/vendors/bootstrap/dist/js/bootstrap.min.js')}}"></script>
 <script src="{{asset('assets/vendors/aos/aos.js')}}"></script>
 <script src="{{asset('assets/js/main.js')}}"></script>
-{{--<script src="{{asset('dist/js/demo.js')}}"></script>--}}
 <script>
     AOS.init({
         duration: 2000
