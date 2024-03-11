@@ -93,9 +93,9 @@ Route::get('/about', function () {
 Route::get('/video', function () {
     return view('image.show');
 });
-Route::get('/contacts', function () {
-    return view('layouts.contacts');
-});
+Route::get('/contacts', '\App\Http\Controllers\FeedbackController@index')->name('contacts.index');
+Route::post('/contacts', '\App\Http\Controllers\FeedbackController@send')->name('contacts.send');
+
 Route::get('/image', \App\Http\Controllers\Main\ImageController::class);
 
 Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {

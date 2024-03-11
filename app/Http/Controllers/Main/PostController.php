@@ -10,7 +10,7 @@ class PostController extends Controller
 {
     public function __invoke()
     {
-        $posts = Post::paginate(9);
+        $posts = Post::paginate(9)->sortByDesc('id');
         return view('post.index', compact('posts'));
     }
 
@@ -19,9 +19,4 @@ class PostController extends Controller
 
         return view('post.single', compact('post'));
     }
-//    public function index()
-//    {
-//        $images = Image::all();
-//        return view('image.index', compact('images'));
-//    }
 }

@@ -51,6 +51,10 @@
                                                                                               style="color:black"></i></a>
                     </li>
                     <li class="nav-item mt-lg-1 ml-4">
+                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i class="fab fa-instagram"
+                                                                                              style="color:black"></i></a>
+                    </li>
+                    <li class="nav-item mt-lg-1 ml-4">
                         <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
                                 class="fas fa-globe" style="color:black"></i></a>
                     </li>
@@ -82,10 +86,13 @@
                     <img src="{{asset('assets/images/kant.svg')}}" alt="logo">
                 </a>
                 <p class="contact-details">Образцовый хор "Кантилена"</p>
-                <p class="contact-details">kantilena-minsk@ya.ru</p>
+                <p class="contact-details">kantilena.music@gmail.com</p>
+{{--                <p class="contact-details">kantilena-minsk@ya.ru</p>--}}
                 <nav class="footer-social-links">
                     <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
                                                                                           style="color:black"></i></a>
+                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i class="fab fa-instagram"
+                                                                                                       style="color:black"></i></a>
                     <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
                             class="fas fa-globe" style="color:black"></i></a>
                 </nav>

@@ -1,234 +1,202 @@
 @extends('layouts.main')
 @section('content')
 
-    <header class="edica-header edica-landing-header">
-{{--        <div class="container">--}}
-    <div class="edica-landing-header-content">
-        <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#edicaLandingHeaderCarousel" data-slide-to="0" class="active">.01</li>
-                <li data-target="#edicaLandingHeaderCarousel" data-slide-to="1">.02</li>
-                <li data-target="#edicaLandingHeaderCarousel" data-slide-to="2">.03</li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-                <div class="carousel-item active">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img" src="{{asset('img/фон1.jpg')}}" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text">Last updated 3 mins ago</p>
+    <header class="edica-header ">
+        {{--        <div class="container">--}}
+        <div class="edica-landing-header-content relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+            <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="0" class="active">1</li>
+                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="1">2</li>
+                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="2">3</li>
+                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="3">4</li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <div class="card bg-dark text-center mx-auto max-w-6xl px-6 lg:px-6">
+                            <img class="card-img" src="{{asset('img/фон1.jpg')}}" alt="Card image">
+                            <div class="position-absolute card-img-overlay" style="margin-top: 8%">
+                                <h1 style="letter-spacing: 10px; color: #e6e1f281; font-size: 10vw;">Образцовый хор
+                                    "Кантилена"</h1>
+                                <h3 class="card-text">Детской музыкальной школы искусств №5 г.Минска</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="card bg-dark text-white">
-                        <img class="card-img" src="{{asset('img/фон4.jpg')}}" alt="Card image">
-                        <div class="card-img-overlay">
-                            <h1>Get Started Power social proof for your brands.</h1>
-                            <p>He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement.</p>
+                    <div class="carousel-item">
+                        <div class="card bg-dark text-white text-center">
+                            <img class="card-img" src="{{asset('img/фон4.jpg')}}" alt="Card image">
+                            <div class="card-img-overlay" style="margin-top: 8%">
+                                <h1 style="letter-spacing: 10px; color: #e6e1f2; font-size: 5vw;">"Кантилена" — хор,
+                                    объединяющий души!</h1>
+                                <h3>Детский хор - путевка в жизнь через музыку и любовь!</h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row">
-                        <div class="card bg-dark text-white">
-                            <img class="card-img" src="{{asset('img/фон3.jpg')}}" alt="Card image">
-                            <div class="card-img-overlay">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text">Last updated 3 mins ago</p>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card bg-dark text-white">
+                                <img class="card-img" src="{{asset('img/фон3.jpg')}}" alt="Card image">
+                                {{--                            <div class="card-img-overlay">--}}
+                                {{--                                <h5 class="card-title">Card title</h5>--}}
+                                {{--                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>--}}
+                                {{--                            </div>--}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="card bg-dark text-white text-center">
+                                <img class="card-img" src="{{asset('img/фон7.jpg')}}" alt="Card image">
+                                <div class="card-img-overlay" style="margin-top: 10%">
+                                    <h1 style="letter-spacing: 10px; color: #f9f7fcbd; font-size: 9vw;">Окунитесь в мир
+                                        хорового искусства!</h1>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-{{--        </div>--}}
+        {{--        </div>--}}
     </header>
-<main>
-    <section class="edica-landing-section edica-landing-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6" data-aos="fade-up-right">
-                    <h4 class="edica-landing-section-subtitle-alt">ABOUT US</h4>
-                    <h2 class="edica-landing-section-title">1000+ customer using Our application.</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipng elit, sed do eiusmod tempor incididunt ut labore aliqua. Ut enim que minim veniam, quis nostrud exercitation.</p>
-                    <ul class="landing-about-list">
-                        <li>Powerful and flexible theme</li>
-                        <li>Simple, transparent pricing</li>
-                        <li>Build tools and full documention</li>
-                    </ul>
-                </div>
-                <div class="col-md-6" data-aos="fade-up-left">
-                    <img src=" {{asset('assets/images/phone-copy.png')}} " width="468px" alt="about" class="img-fluid">
+    <main>
+        <section class="edica-landing-section edica-landing-about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6" data-aos="fade-up-right">
+                        <h4 class="edica-landing-section-subtitle-alt">О нас</h4>
+                        <h2 class="edica-landing-section-title">Основан в 2006 году</h2>
+                        <p>Хор ведет активную концертную деятельность, выступая нам самых
+                            различных площадках города.</p>
+                        <p>Работа коллектива направлена прежде всего на воспитание в
+                            учениках высокого уровня культуры и эстетического вкуса, любви к
+                            музыкальному искусству посредством хорового и сольного
+                            исполнительства.</p>
+                        <p>Концертная деятельность хора, подбор высокохудожественного
+                            репертуара, поиск новых методов и средств в достижении высокого
+                            уровня исполнительского мастерства являются практической
+                            реализацией творческой идеи коллектива.</p>
+                    </div>
+                    <div class="col-md-6" data-aos="fade-up-left">
+                        <img src=" {{asset('img/3.jpg')}} " width="468px" alt="about" class="img-fluid">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="edica-landing-section edica-landing-clients">
-        <div class="container">
-            <h4 class="edica-landing-section-subtitle-alt">PARTNER WITH US</h4>
-            <div class="partners-wrapper">
-                <img src=" {{asset('assets/images/Partner_1.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="250">
-                <img src=" {{asset('assets/images/Partner_2.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="500">
-                <img src=" {{asset('assets/images/Partner_3.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="750">
-                <img src=" {{asset('assets/images/Partner_4.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="1000">
-                <img src=" {{asset('assets/images/Partner_5.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="1250">
-                <img src=" {{asset('assets/images/Partner_6.png')}} " alt="client logo" data-aos="flip-right" data-aos-delay="1500">
-            </div>
-        </div>
-    </section>
-    <section class="edica-landing-section edica-landing-services">
-        <div class="container">
-            <h4 class="edica-landing-section-subtitle">Service We Offer</h4>
-            <h2 class="edica-landing-section-title">What features you will <br> Get from App.</h2>
-            <div class="row">
-                <div class="col-md-6 landing-service-card" data-aos="fade-right">
-                    <img src=" {{asset('assets/images/picture.svg')}} " alt="card img" class="img-fluid service-card-img">
-                    <h4 class="service-card-title">Live Video</h4>
-                    <p class="service-card-description">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the.</p>
-                </div>
-                <div class="col-md-6 landing-service-card" data-aos="fade-left">
-                    <img src=" {{asset('assets/images/internet.svg')}} " alt="card img" class="img-fluid service-card-img">
-                    <h4 class="service-card-title">Secure and Reliable</h4>
-                    <p class="service-card-description">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the.</p>
-                </div>
-                <div class="col-md-6 landing-service-card" data-aos="fade-right">
-               <img src=" {{asset('assets/images/goal.svg')}} " alt="card img" class="img-fluid service-card-img">
-                    <h4 class="service-card-title">Fast. Instantly.</h4>
-                    <p class="service-card-description">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the.</p>
-                </div>
-                <div class="col-md-6 landing-service-card" data-aos="fade-left">
-                    <img src=" {{asset('assets/images/chat-bubble.svg')}} " alt="card img" class="img-fluid service-card-img">
-                    <h4 class="service-card-title">Built-in Messenger</h4>
-                    <p class="service-card-description">He has led a remarkable campaign, defying the traditional mainstream parties courtesy of his En Marche! movement. For many, however, the.</p>
+        </section>
+        <section class="edica-landing-section edica-landing-services">
+            <div class="container">
+                <h4 class="edica-landing-section-subtitle">Наш репертуар</h4>
+                <h2 class="edica-landing-section-title">Лучшие произведения музыкальной классики</h2>
+                <div class="row">
+                    <div class="col-md-6 blog-post mb-1" data-aos="fade-right">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/frc1wGmjfa0?si=GPNWMAUChoAIUx9M"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 blog-post mb-1" data-aos="fade-left">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/jh3aiYGgcA0?si=OtD6KJaYK_S_cX3F"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 blog-post mb-1" data-aos="fade-right">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/FJAO6SWdibU?si=TAv1xdL84Ap718iD"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="col-md-6 blog-post mb-1" data-aos="fade-left">
+                        <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/VMpgVbN3FDw?si=KMx0aYZ022jXIU-O"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="edica-landing-section edica-landing-testimonials" data-aos="fade-up">
-        <div class="container">
-            <div id="edicaLandingTestimonialCarousel" class="carousel slide landing-testimonial-carousel" data-ride="carousel">
-                <div class="text-center py-4">
-                    <img src=" {{asset('assets/images/quote.svg')}} " alt="quote">
-                </div>
-                <div class="carousel-inner" role="listbox">
-                    <div class="carousel-item">
-                        <blockquote class="testimonial">
-                            <p>“My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.” </p>
-                        </blockquote>
+        </section>
+        <section class="edica-landing-section edica-landing-testimonials" data-aos="fade-up">
+            <div class="container">
+                <div id="edicaLandingTestimonialCarousel" class="carousel slide landing-testimonial-carousel"
+                     data-ride="carousel">
+                    <div class="text-center py-4">
+                        <img src=" {{asset('assets/images/quote.svg')}} " alt="quote" style="width: 70px">
                     </div>
-                    <div class="carousel-item">
-                        <blockquote class="testimonial">
-                            <p>“My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.” </p>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item active">
-                        <blockquote class="testimonial">
-                            <p>“My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.” </p>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="testimonial">
-                            <p>“My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.” </p>
-                        </blockquote>
-                    </div>
-                    <div class="carousel-item">
-                        <blockquote class="testimonial">
-                            <p>“My mission in life is not merely to survive, but to thrive; and to do so with some passion, some compassion, some humor, and some style.” </p>
-                        </blockquote>
-                    </div>
-                </div>
-                <ol class="carousel-indicators">
-                    <li data-target="#edicaLandingTestimonialCarousel" data-slide-to="0">
-                        <img src=" {{asset('assets/images/oval-copy-3.png')}} " alt="avatar">
-                        <div class="user-details">
-                            <h6>Gabie Sheber</h6>
-                            <p>Developer</p>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item">
+                            <blockquote class="testimonial">
+                                <p>«Величие искусства, пожалуй, ярче всего проявляется в музыке, ибо она не имеет
+                                    содержания, с которым нужно считаться. Она – все формы и наполнения. Она делает
+                                    возвышенным и благородным все, что берется выразить»</p>
+                                <footer class="blockquote-footer">Иоганн Вольфганг фон Гёте</footer>
+                            </blockquote>
                         </div>
-                    </li>
-                    <li data-target="#edicaLandingTestimonialCarousel" data-slide-to="1">
-                        <img src=" {{asset('assets/images/oval-copy-4.png')}} " alt="avatar">
-                        <div class="user-details">
-                            <h6>Gabie Sheber</h6>
-                            <p>Developer</p>
+                        <div class="carousel-item">
+                            <blockquote class="testimonial">
+                                <p>«Музыка своей мелодией доводит нас до самого края вечности и дает нам возможность в
+                                    течение нескольких минут постичь ее величие».</p>
+                                <footer class="blockquote-footer">Томас Карлейль</footer>
+                            </blockquote>
                         </div>
-                    </li>
-                    <li data-target="#edicaLandingTestimonialCarousel" data-slide-to="2" class="active">
-                   <img src=" {{asset('assets/images/oval.png')}} " alt="avatar">
-                        <div class="user-details">
-                            <h6>Gabie Sheber</h6>
-                            <p>Developer</p>
+                        <div class="carousel-item active">
+                            <blockquote class="testimonial">
+                                <p>«Музыка воплощает в себе чувство, не заставляя его утверждать и смешать с мыслью, как
+                                    оно вынуждено в большинстве искусств, особенно в искусстве слова…»</p>
+                                <footer class="blockquote-footer">Ференц Лист</footer>
+                            </blockquote>
                         </div>
-
-                    </li>
-                    <li data-target="#edicaLandingTestimonialCarousel" data-slide-to="3">
-                        <img src=" {{asset('assets/images/oval-copy.png')}} " alt="avatar">
-                        <div class="user-details">
-                            <h6>Gabie Sheber</h6>
-                            <p>Developer</p>
+                        <div class="carousel-item">
+                            <blockquote class="testimonial">
+                                <p>«Любите и изучайте великое искусство музыки. Оно откроет вам целый мир высоких
+                                    чувств, страстей, мыслей. Оно сделает вас духовно богаче. Благодаря музыке вы
+                                    найдете в себе новые, неведомые вам прежде силы. Вы увидите жизнь в новых тонах и
+                                    красках».</p>
+                                <footer class="blockquote-footer">Дмитрий Шостакович</footer>
+                            </blockquote>
                         </div>
-                    </li>
-                    <li data-target="#edicaLandingTestimonialCarousel" data-slide-to="4">
-                        <img src=" {{asset('assets/images/oval-copy-2.png')}} " alt="avatar">
-                        <div class="user-details">
-                            <h6>Gabie Sheber</h6>
-                            <p>Developer</p>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-        </div>
-    </section>
-    <section class="edica-landing-section edica-landing-blog">
-        <div class="container">
-            <h4 class="edica-landing-section-subtitle" data-aos="fade-up">Blog posts</h4>
-            <h2 class="edica-landing-section-title" data-aos="fade-up">Check our app latest blog post <br> for more update.</h2>
-            <div class="row">
-                <div class="col-md-4 landing-blog-post" data-aos="fade-right">
-                    <img src=" {{asset('assets/images/rectangle.png')}} " alt="blog post" class="blog-post-thumbnail">
-                    <p class="blog-post-category">Blog post</p>
-                    <h4 class="blog-post-title">Check our latest blog post for more update.</h4>
-                    <a href="#!" class="blog-post-link">Learn more</a>
-                </div>
-                <div class="col-md-4 landing-blog-post" data-aos="fade-up">
-                    <img src=" {{asset('assets/images/rectangle-copy.png')}} " alt="blog post" class="blog-post-thumbnail">
-                    <p class="blog-post-category">Blog post</p>
-                    <h4 class="blog-post-title">Check our latest blog post for more update.</h4>
-                    <a href="#!" class="blog-post-link">Learn more</a>
-                </div>
-                <div class="col-md-4 landing-blog-post" data-aos="fade-left">
-                    <img src=" {{asset('assets/images/rectangle-copy-2.png')}} " alt="blog post" class="blog-post-thumbnail">
-                    <p class="blog-post-category">Blog post</p>
-                    <h4 class="blog-post-title">Check our latest blog post for more update.</h4>
-                    <a href="#!" class="blog-post-link">Learn more</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="edica-landing-section edica-landing-blog-posts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="blog-post-card blog-post-1 mb-4 mb-md-0" data-aos="fade-right">
-                        <p class="post-category">App Design</p>
-                        <h2 class="post-title">Check our latest blog post for more update.</h2>
-                        <a href="#!" class="post-link">Learn more</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="blog-post-card blog-post-2" data-aos="fade-left">
-                        <p class="post-category">App Design</p>
-                        <h2 class="post-title">Check our latest blog post for more update.</h2>
-                        <a href="#!" class="post-link">Learn more</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
+        <section class="edica-landing-section edica-landing-blog">
+            <div class="container">
+                <h4 class="edica-landing-section-subtitle" data-aos="fade-up">Знаковые мероприятия</h4>
+                <h2 class="edica-landing-section-title" data-aos="fade-up">Важные мероприятия с участием хора</h2>
+                <div class="row">
+                    <div class="col-md-4 landing-blog-post" data-aos="fade-right">
+                        <a href="{{asset('assets/images/19.04.2022_c.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100">
+                            <img src="{{asset('assets/images/19.04.2022_c.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                        <br><br>
+                        <h4 class="blog-post-title text-center">Юбилейный концерт образцового хора "Кантилена" на сцене
+                            Белорусской Государственной Филармонии</h4>
+                    </div>
+                    <div class="col-md-4 landing-blog-post" data-aos="fade-up">
+                        <a href="{{asset('assets/images/04.02.23mz.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100">
+                            <img src="{{asset('assets/images/04.02.23mz.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                        <br><br>
+                        <h4 class="blog-post-title text-center">Хоровой концерт "Песня собирает друзей!"</h4>
+                    </div>
+                    <div class="col-md-4 landing-blog-post" data-aos="fade-left">
+                        <a href="{{asset('assets/images/17.04.2024.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100">
+                            <img src="{{asset('assets/images/17.04.2024.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                        <br><br>
+                        <h4 class="blog-post-title text-center">Концерт хоровых коллестивов ГУО "Детская музыкальная
+                            школа искусств №5 г.Минска"</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 @endsection
 
 

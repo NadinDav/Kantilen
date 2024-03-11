@@ -11,7 +11,10 @@
 {{--                                <p>You are safe here! I shouted above the sudden noise. She looked away from me downhill. The people were coming out of their houses, astonished.</p>--}}
 {{--                                <footer class="blockquote-footer">Oluchi Mazi</footer>--}}
 {{--                            </blockquote>--}}
-                            <blockquote class="col-md-6" data-aos="fade-right" data-aos-delay="150">
+                            <blockquote class="col-md-6" data-aos="fade-right" data-aos-delay="150" style="border-left: .7rem solid #000000;">
+                                <div class="text-left py-1">
+                                    <img src=" {{asset('assets/images/quote.svg')}} " alt="quote" style="width: 90px">
+                                </div>
                                 <h2 class="intro-title pb-3 pb-md-0 mb-4 mb-md-0">«Хор – это высочайшее искусство и искренний разговор со слушателями»
                                 </h2>
                             <footer class="blockquote-footer">В.Н. Минин, профессор, создатель и бессменный художественный руководитель Московского государственного академического камерного хора</footer>
@@ -19,8 +22,9 @@
                             <div class="col-md-6 intro-content" data-aos="fade-left" data-aos-delay="150">
                                 <p><span class="first-letter">Д</span>етский хор «Кантилена»- это творческий коллектив
                                     детей в возрасте от 10 до 16 лет, которых обьединяет любовь к музыке, пению, к
-                                    искусству. За время своего существования хор стал настоящей музыкальной семьей
-                                    ,формирующей и раскрывающей творческий потенциал учащихся, дающей возможность
+                                    искусству.
+                                    <br>За время своего существования хор стал настоящей музыкальной семьей,
+                                    формирующей и раскрывающей творческий потенциал учащихся, дающей возможность
                                     проявить себя каждому участнику хора.
                                 </p>
                             </div>
@@ -32,11 +36,12 @@
                                 <img src="assets/images/024-228.jpg" alt="vision" class="img-fluid">
                             </div>
                             <div class="col-md-6 d-flex flex-column justify-content-center">
-                                <h2 class="vision-title" data-aos="fade-left">Основание</h2>
+                                <h2 class="vision-title" data-aos="fade-left">Руководитель</h2>
                                 <p class="vision-text" data-aos="fade-left">Хор «Кантилена» детской музыкальной школы
                                     искусств №5 г.Минска был образован в 2006 г. Звание «образцовый» получил в 2009.
-                                    Художественный руководитель – Моргачева Инна Сергеевна,преподаватель высшей
-                                    категории, лауреат международных конкурсов, преподаватель высшей категории.
+                                    <br>Художественный руководитель – <strong>Моргачева Инна Сергеевна</strong>,
+                                    выпускница УО "Минский государственный музыкальный колледж им. М.И. Глинки" и Белорусской государственной Академии Музыки.
+                                    <br>Преподаватель высшей категории, лауреат международных конкурсов, преподаватель высшей категории.
                                 </p>
                             </div>
                         </div>
@@ -46,11 +51,12 @@
                             <div class="col-md-6 mb-4 mb-md-0 d-flex flex-column justify-content-center"
                                  data-aos="fade-right">
                                 <h2 class="goal-title">Концертмейстер</h2>
-                                <p class="goal-text">Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
-                                    in laying out printed graphic or web designs. The passage is at attributed to an
-                                    unknown typesetters in 1the 5th century who is thought scrambled with all parts of
-                                    Cicero’s De. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in
-                                    laying out printed graphic or web designs</p>
+                                <p class="goal-text"><strong>Шичко Екатерина Петровна</strong> в 1993-2003 гг. обучалась в ГУО «Гимназия-колледж искусств имени И.О. Ахремчика» (класс фортепиано преподавателя А.А.Романович).
+                                <br>В 2003-2008 гг. продолжила обучение в Белорусской государственной академии музыки (класс доцента Т.Г.Володько).
+                                    <br>С 2016 года и по настоящее время работает в ГУО «Детская музыкальная школа искусств № 5 г. Минска»
+                                    заведующей отделом концертмейстеров.
+                                    <br>Принимала участие в международных и республиканских конкурсах.
+                                Награждена дипломами за высокое профессиональное мастерство.</p>
                             </div>
                             <div class="col-md-6" data-aos="fade-left">
                                 <img src="img/IMG_6169.jpeg" alt="goal" class="img-fluid">
