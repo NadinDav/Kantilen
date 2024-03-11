@@ -127,7 +127,7 @@
                         <img src=" {{asset('assets/images/quote.svg')}} " alt="quote" style="width: 70px">
                     </div>
                     <div class="carousel-inner" role="listbox">
-                        <div class="carousel-item">
+                        <div class="carousel-item bg-white">
                             <blockquote class="testimonial">
                                 <p>«Величие искусства, пожалуй, ярче всего проявляется в музыке, ибо она не имеет
                                     содержания, с которым нужно считаться. Она – все формы и наполнения. Она делает
