@@ -1,7 +1,17 @@
 <?php
 
 return [
-
+//    'driver' => env('MAIL_DRIVER', 'smtp'),
+//    'host' => env('MAIL_HOST', 'smtp.yandex.ru'),
+//    'port' => env('MAIL_PORT', 465),
+//    'from' => [
+//        'address' => 'kantilena-minsk@yandex.ru',
+//        'name' => 'Type What You Want',
+//    ],
+//    'encryption' => env('MAIL_ENCRYPTION', 'tls'),
+//    'username' => env('MAIL_USERNAME', 'kantilena-minsk@yandex.ru'),
+//    'password' => env('MAIL_PASSWORD', 'Kantilena123'),
+//    ];
     /*
     |--------------------------------------------------------------------------
     | Default Mailer

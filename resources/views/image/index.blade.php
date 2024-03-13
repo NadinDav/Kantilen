@@ -9,7 +9,7 @@
                         <div class="col-md-4 blog-post mb-1" data-aos="fade-up">
                             <div class="blog-post-thumbnail-wrapper">
                                 <a href="{{ asset('storage/' . $image->image)}}" data-toggle="lightbox"
-                                   data-gallery="gallery" class="w-100">
+                                   data-gallery="gallery" class="w-100" target="_blank">
                                     <img src="{{ asset('storage/' . $image->image)}}" class="img-fluid" alt="{{$image->title}}">
                                 </a>
                             </div>

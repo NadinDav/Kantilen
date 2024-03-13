@@ -16,21 +16,24 @@
 <body>
 <div class="edica-loader"></div>
 <header class="edica-header">
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+{{--    <div class="container">--}}
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="flex-wrap: nowrap">
             <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}"
-                                                                             alt="Кантилена" style="width: 40%"></a>
+                                                                             alt="Кантилена" style="width: 12%">
+                <img
+                    src="{{asset('assets/images/Гардения2.jpeg')}}"
+                    alt="Кантилена" style="width: 20%"></a>
             <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
-                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" >
+                <span class="navbar-toggler-icon" ></span>
             </button>
             <div class="collapse navbar-collapse" id="edicaMainNav">
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">О нас</a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/about" style="white-space: nowrap">О нас</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="/posts">Новости</a>
@@ -51,8 +54,9 @@
                                                                                               style="color:black"></i></a>
                     </li>
                     <li class="nav-item mt-lg-1 ml-4">
-                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i class="fab fa-instagram"
-                                                                                              style="color:black"></i></a>
+                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i
+                                class="fab fa-instagram"
+                                style="color:black"></i></a>
                     </li>
                     <li class="nav-item mt-lg-1 ml-4">
                         <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
@@ -73,7 +77,7 @@
                 {{--            </ul>--}}
             </div>
         </nav>
-    </div>
+{{--    </div>--}}
 </header>
 
 @yield('content')
@@ -87,12 +91,13 @@
                 </a>
                 <p class="contact-details">Образцовый хор "Кантилена"</p>
                 <p class="contact-details">kantilena.music@gmail.com</p>
-{{--                <p class="contact-details">kantilena-minsk@ya.ru</p>--}}
+                {{--                <p class="contact-details">kantilena-minsk@ya.ru</p>--}}
                 <nav class="footer-social-links">
                     <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
                                                                                           style="color:black"></i></a>
-                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i class="fab fa-instagram"
-                                                                                                       style="color:black"></i></a>
+                    <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i
+                            class="fab fa-instagram"
+                            style="color:black"></i></a>
                     <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
                             class="fas fa-globe" style="color:black"></i></a>
                 </nav>

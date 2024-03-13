@@ -1,19 +1,19 @@
 @extends('layouts.main')
 @section('content')
-            @if (session('success'))
-                <div class="alert alert-success" role="alert">
-                    {{ session('success') }}
-                </div>
-            @endif
-            @if ($errors->any())
-                <div class="alert alert-danger" role="alert">
-                    <ul>
-                        @foreach($errors->all() as $error)
-                            <li>{{ $error }}</li>
-                        @endforeach
-                    </ul>
-                </div>
-            @endif
+    @if (session('success'))
+        <div class="alert alert-success" role="alert">
+            {{ session('success') }}
+        </div>
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger" role="alert">
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
     <main>
         <div class="container">
             <div class="row">
@@ -47,14 +47,15 @@
                                         <div class="form-group col-md-6" data-aos="fade-up" data-aos-delay="100">
                                             <label for="subject">ТЕМА</label>
                                             <input type="text" class="form-control" id="subject" name="subject"
-                                                   placeholder="Тема сообщения" required maxlength="500"
-                                                   value="{{ old('message') ?? '' }}">
+                                                   placeholder="Тема сообщения" required maxlength="100"
+                                                   value="{{ old('subject') ?? '' }}">
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="form-group col-12" data-aos="fade-up" data-aos-delay="200">
                                             <label for="message">СООБЩЕНИЕ</label>
-                                            <textarea name="message" id="message" rows="9" class="form-control">Текст сообщения</textarea>
+                                            <textarea name="message" id="message" rows="9" class="form-control" required
+                                                      maxlength="500">{{ old('message') ?? '' }}</textarea>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-warning btn-lg" data-aos="fade-up"
