@@ -2,14 +2,12 @@
 @section('content')
 
     <header class="edica-header ">
-        {{--        <div class="container">--}}
         <div class="edica-landing-header-content relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
             <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="0" class="active">1</li>
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="1">2</li>
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="2">3</li>
-{{--                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="3">3</li>--}}
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
@@ -46,7 +44,6 @@
                 </div>
             </div>
         </div>
-        {{--        </div>--}}
     </header>
     <main>
         <section class="edica-landing-section edica-landing-about">
@@ -205,31 +202,12 @@
                             <img src="{{asset('img/Д8.jpg')}}" class="img-fluid" alt="blog post">
                         </a>
                     </div>
-{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-left">--}}
-{{--                        <a href="{{asset('img/Д7.jpg')}}" data-toggle="lightbox"--}}
-{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
-{{--                            <img src="{{asset('img/Д7.jpg')}}" class="img-fluid" alt="blog post">--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
                     <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-left">
                         <a href="{{asset('img/Д6.jpg')}}" data-toggle="lightbox"
                            data-gallery="gallery" class="w-100" target="_blank">
                             <img src="{{asset('img/Д6.jpg')}}" class="img-fluid" alt="blog post">
                         </a>
                     </div>
-{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-up">--}}
-{{--                        <a href="{{asset('img/Д5.jpg')}}" data-toggle="lightbox"--}}
-{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
-{{--                            <img src="{{asset('img/Д5.jpg')}}" class="img-fluid" alt="blog post">--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
-{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-left">--}}
-{{--                        <a href="{{asset('img/Д3.jpg')}}" data-toggle="lightbox"--}}
-{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
-{{--                            <img src="{{asset('img/Д3.jpg')}}" class="img-fluid" alt="blog post">--}}
-{{--                        </a>--}}
-{{--                    </div>--}}
-
                 </div>
             </div>
         </section>
