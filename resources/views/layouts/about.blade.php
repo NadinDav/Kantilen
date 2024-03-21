@@ -7,10 +7,6 @@
                     <h1 class="edica-page-title" data-aos="fade-up">О нас</h1>
                     <section class="edica-about-intro py-5">
                         <div class="row">
-{{--                            <blockquote class="col-md-6" data-aos="fade-right" data-aos="fade-up">--}}
-{{--                                <p>You are safe here! I shouted above the sudden noise. She looked away from me downhill. The people were coming out of their houses, astonished.</p>--}}
-{{--                                <footer class="blockquote-footer">Oluchi Mazi</footer>--}}
-{{--                            </blockquote>--}}
                             <blockquote class="col-md-6" data-aos="fade-right" data-aos-delay="150" style="border-left: .7rem solid #000000;">
                                 <div class="text-left py-1">
                                     <img src=" {{asset('assets/images/quote.svg')}} " alt="quote" style="width: 90px">
