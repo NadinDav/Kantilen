@@ -9,12 +9,12 @@
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="0" class="active">1</li>
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="1">2</li>
                     <li data-target="#edicaLandingHeaderCarousel" data-slide-to="2">3</li>
-                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="3">4</li>
+{{--                    <li data-target="#edicaLandingHeaderCarousel" data-slide-to="3">3</li>--}}
                 </ol>
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="card bg-dark text-center mx-auto max-w-6xl px-6 lg:px-6">
-                            <img class="card-img" src="{{asset('img/фон1.jpg')}}" alt="Card image">
+                            <img class="card-img" src="{{asset('img/фон10.jpg')}}" alt="Card image">
                             <div class="position-absolute card-img-overlay" style="margin-top: 8%">
                                 <h1 style="letter-spacing: 10px; color: #e6e1f281; font-size: 10vw;">Образцовый хор
                                     "Кантилена"</h1>
@@ -24,7 +24,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="card bg-dark text-white text-center">
-                            <img class="card-img" src="{{asset('img/фон4.jpg')}}" alt="Card image">
+                            <img class="card-img" src="{{asset('img/фон9.jpg')}}" alt="Card image">
                             <div class="card-img-overlay" style="margin-top: 8%">
                                 <h1 style="letter-spacing: 10px; color: #e6e1f2; font-size: 5vw;">"Кантилена" — хор,
                                     объединяющий души!</h1>
@@ -34,19 +34,8 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="card bg-dark text-white">
-                                <img class="card-img" src="{{asset('img/фон3.jpg')}}" alt="Card image">
-                                {{--                            <div class="card-img-overlay">--}}
-                                {{--                                <h5 class="card-title">Card title</h5>--}}
-                                {{--                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>--}}
-                                {{--                            </div>--}}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
                             <div class="card bg-dark text-white text-center">
-                                <img class="card-img" src="{{asset('img/фон7.jpg')}}" alt="Card image">
+                                <img class="card-img" src="{{asset('img/фон11.jpg')}}" alt="Card image">
                                 <div class="card-img-overlay" style="margin-top: 10%">
                                     <h1 style="letter-spacing: 10px; color: #f9f7fcbd; font-size: 9vw;">Окунитесь в мир
                                         хорового искусства!</h1>
@@ -164,35 +153,83 @@
         </section>
         <section class="edica-landing-section edica-landing-blog">
             <div class="container">
-                <h4 class="edica-landing-section-subtitle" data-aos="fade-up">Знаковые мероприятия</h4>
-                <h2 class="edica-landing-section-title" data-aos="fade-up">Важные мероприятия с участием хора</h2>
+                <h4 class="edica-landing-section-subtitle" data-aos="fade-up">Наши награды</h4>
+                <h2 class="edica-landing-section-title" data-aos="fade-up">Малая часть достижений на площадках разного уровня</h2>
                 <div class="row">
                     <div class="col-md-4 landing-blog-post" data-aos="fade-right">
-                        <a href="{{asset('assets/images/19.04.2022_c.jpg')}}" data-toggle="lightbox"
-                           data-gallery="gallery" class="w-100">
-                            <img src="{{asset('assets/images/19.04.2022_c.jpg')}}" class="img-fluid" alt="blog post">
+                        <a href="{{asset('img/Д15.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery"  target="_blank">
+                            <img src="{{asset('img/Д15.jpg')}}" class="img-fluid" alt="blog post">
                         </a>
-                        <br><br>
-                        <h4 class="blog-post-title text-center">Юбилейный концерт образцового хора "Кантилена" на сцене
-                            Белорусской Государственной Филармонии</h4>
                     </div>
                     <div class="col-md-4 landing-blog-post" data-aos="fade-up">
-                        <a href="{{asset('assets/images/04.02.23mz.jpg')}}" data-toggle="lightbox"
-                           data-gallery="gallery" class="w-100">
-                            <img src="{{asset('assets/images/04.02.23mz.jpg')}}" class="img-fluid" alt="blog post">
+                        <a href="{{asset('img/Д14.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery"  target="_blank">
+                            <img src="{{asset('img/Д14.jpg')}}" class="img-fluid" alt="blog post">
                         </a>
-                        <br><br>
-                        <h4 class="blog-post-title text-center">Хоровой концерт "Песня собирает друзей!"</h4>
                     </div>
                     <div class="col-md-4 landing-blog-post" data-aos="fade-left">
-                        <a href="{{asset('assets/images/17.04.2024.jpg')}}" data-toggle="lightbox"
-                           data-gallery="gallery" class="w-100">
-                            <img src="{{asset('assets/images/17.04.2024.jpg')}}" class="img-fluid" alt="blog post">
+                        <a href="{{asset('img/Д13.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery"  target="_blank">
+                            <img src="{{asset('img/Д13.jpg')}}" class="img-fluid" alt="blog post">
                         </a>
-                        <br><br>
-                        <h4 class="blog-post-title text-center">Концерт хоровых коллестивов ГУО "Детская музыкальная
-                            школа искусств №5 г.Минска"</h4>
                     </div>
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-right">
+                        <a href="{{asset('img/Д12.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д12.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-up">
+                        <a href="{{asset('img/Д11.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д11.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-left">
+                        <a href="{{asset('img/Д10.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д10.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-right">
+                        <a href="{{asset('img/Д9.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д9.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-up">
+                        <a href="{{asset('img/Д8.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д8.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-left">--}}
+{{--                        <a href="{{asset('img/Д7.jpg')}}" data-toggle="lightbox"--}}
+{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
+{{--                            <img src="{{asset('img/Д7.jpg')}}" class="img-fluid" alt="blog post">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+                    <div class="col-md-4 landing-blog-post mt-3" data-aos="fade-left">
+                        <a href="{{asset('img/Д6.jpg')}}" data-toggle="lightbox"
+                           data-gallery="gallery" class="w-100" target="_blank">
+                            <img src="{{asset('img/Д6.jpg')}}" class="img-fluid" alt="blog post">
+                        </a>
+                    </div>
+{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-up">--}}
+{{--                        <a href="{{asset('img/Д5.jpg')}}" data-toggle="lightbox"--}}
+{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
+{{--                            <img src="{{asset('img/Д5.jpg')}}" class="img-fluid" alt="blog post">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+{{--                    <div class="col-md-4 landing-blog-post" data-aos="fade-left">--}}
+{{--                        <a href="{{asset('img/Д3.jpg')}}" data-toggle="lightbox"--}}
+{{--                           data-gallery="gallery" class="w-100" target="_blank">--}}
+{{--                            <img src="{{asset('img/Д3.jpg')}}" class="img-fluid" alt="blog post">--}}
+{{--                        </a>--}}
+{{--                    </div>--}}
+
                 </div>
             </div>
         </section>

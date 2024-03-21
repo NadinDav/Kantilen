@@ -33,7 +33,7 @@
                     <section class="edica-about-vision py-5">
                         <div class="row">
                             <div class="col-md-6 pb-3 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="200">
-                                <img src="assets/images/024-228.jpg" alt="vision" class="img-fluid">
+                                <img src=" {{asset('assets/images/024-228.jpg')}}" alt="vision" class="img-fluid">
                             </div>
                             <div class="col-md-6 d-flex flex-column justify-content-center">
                                 <h2 class="vision-title" data-aos="fade-left">Руководитель</h2>
@@ -59,7 +59,7 @@
                                 Награждена дипломами за высокое профессиональное мастерство.</p>
                             </div>
                             <div class="col-md-6" data-aos="fade-left">
-                                <img src="img/IMG_6169.jpeg" alt="goal" class="img-fluid">
+                                <img src=" {{asset('img/IMG_6169.jpeg')}}" alt="goal" class="img-fluid">
                             </div>
                         </div>
                     </section>
@@ -124,14 +124,14 @@
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="edicaAboutFaqContent1" class="collapse in" role="tabpanel"
-                                     aria-labelledby="edicaAboutFaq1">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis quas
-                                        quos ipsa hic cumque debitis, facere illum facilis alias quae, labore totam,
-                                        voluptatibus aspernatur corrupti! Enim quo dolores quos.
-                                    </div>
-                                </div>
+{{--                                <div id="edicaAboutFaqContent1" class="collapse in" role="tabpanel"--}}
+{{--                                     aria-labelledby="edicaAboutFaq1">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit reiciendis quas--}}
+{{--                                        quos ipsa hic cumque debitis, facere illum facilis alias quae, labore totam,--}}
+{{--                                        voluptatibus aspernatur corrupti! Enim quo dolores quos.--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <div class="card" data-aos="fade-up" data-aos-delay="300">
                                 <div class="card-header" role="tab" id="edicaAboutFaq2">
@@ -143,14 +143,14 @@
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="edicaAboutFaqContent2" class="collapse" role="tabpanel"
-                                     aria-labelledby="edicaAboutFaq2">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aut
-                                        exercitationem dolor porro maiores fugiat enim vitae laboriosam, obcaecati earum
-                                        doloremque quas sit tempora in veritatis? Nihil earum excepturi rerum.
-                                    </div>
-                                </div>
+{{--                                <div id="edicaAboutFaqContent2" class="collapse" role="tabpanel"--}}
+{{--                                     aria-labelledby="edicaAboutFaq2">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque aut--}}
+{{--                                        exercitationem dolor porro maiores fugiat enim vitae laboriosam, obcaecati earum--}}
+{{--                                        doloremque quas sit tempora in veritatis? Nihil earum excepturi rerum.--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <div class="card" data-aos="fade-up" data-aos-delay="400">
                                 <div class="card-header" role="tab" id="edicaAboutFaq3">
@@ -162,14 +162,14 @@
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="edicaAboutFaqContent3" class="collapse" role="tabpanel"
-                                     aria-labelledby="edicaAboutFaq3">
-                                    <div class="card-body">
-                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad commodi ut saepe
-                                        dolor ipsam hic nisi, accusamus fugit molestiae reiciendis dolores aspernatur
-                                        incidunt officiis, explicabo assumenda? Pariatur itaque nostrum error.
-                                    </div>
-                                </div>
+{{--                                <div id="edicaAboutFaqContent3" class="collapse" role="tabpanel"--}}
+{{--                                     aria-labelledby="edicaAboutFaq3">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad commodi ut saepe--}}
+{{--                                        dolor ipsam hic nisi, accusamus fugit molestiae reiciendis dolores aspernatur--}}
+{{--                                        incidunt officiis, explicabo assumenda? Pariatur itaque nostrum error.--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <div class="card" data-aos="fade-up" data-aos-delay="500">
                                 <div class="card-header" role="tab" id="edicaAboutFaq4">
@@ -181,14 +181,14 @@
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="edicaAboutFaqContent4" class="collapse" role="tabpanel"
-                                     aria-labelledby="edicaAboutFaq4">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, fuga
-                                        nemo quasi temporibus assumenda illo provident corporis, dolores rem ipsum odit
-                                        animi voluptatem reiciendis accusamus maiores perspiciatis necessitatibus a?
-                                    </div>
-                                </div>
+{{--                                <div id="edicaAboutFaqContent4" class="collapse" role="tabpanel"--}}
+{{--                                     aria-labelledby="edicaAboutFaq4">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, fuga--}}
+{{--                                        nemo quasi temporibus assumenda illo provident corporis, dolores rem ipsum odit--}}
+{{--                                        animi voluptatem reiciendis accusamus maiores perspiciatis necessitatibus a?--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                             <div class="card" data-aos="fade-up" data-aos-delay="500">
                                 <div class="card-header" role="tab" id="edicaAboutFaq5">
@@ -200,14 +200,14 @@
                                         </a>
                                     </h5>
                                 </div>
-                                <div id="edicaAboutFaqContent5" class="collapse" role="tabpanel"
-                                     aria-labelledby="edicaAboutFaq5">
-                                    <div class="card-body">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, fuga
-                                        nemo quasi temporibus assumenda illo provident corporis, dolores rem ipsum odit
-                                        animi voluptatem reiciendis accusamus maiores perspiciatis necessitatibus a?
-                                    </div>
-                                </div>
+{{--                                <div id="edicaAboutFaqContent5" class="collapse" role="tabpanel"--}}
+{{--                                     aria-labelledby="edicaAboutFaq5">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quos, fuga--}}
+{{--                                        nemo quasi temporibus assumenda illo provident corporis, dolores rem ipsum odit--}}
+{{--                                        animi voluptatem reiciendis accusamus maiores perspiciatis necessitatibus a?--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
                             </div>
                         </div>
                     </section>

@@ -16,68 +16,68 @@
 <body>
 <div class="edica-loader"></div>
 <header class="edica-header">
-{{--    <div class="container">--}}
-        <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="flex-wrap: nowrap">
-            <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}"
-                                                                             alt="Кантилена" style="width: 12%">
-                <img
-                    src="{{asset('assets/images/Гардения2.jpeg')}}"
-                    alt="Кантилена" style="width: 20%"></a>
-            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
-                    aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation" >
-                <span class="navbar-toggler-icon" ></span>
-            </button>
-            <div class="collapse navbar-collapse" id="edicaMainNav">
-                <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/about" style="white-space: nowrap">О нас</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/posts">Новости</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown"
-                           aria-haspopup="true" aria-expanded="false">Медиа</a>
-                        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                            <a class="dropdown-item" href="/image">Галерея</a>
-                            <a class="dropdown-item" href="/video">Видео</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/contacts">Контакты</a>
-                    </li>
-                    <li class="nav-item mt-lg-1 ml-4">
-                        <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
-                                                                                              style="color:black"></i></a>
-                    </li>
-                    <li class="nav-item mt-lg-1 ml-4">
-                        <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i
-                                class="fab fa-instagram"
-                                style="color:black"></i></a>
-                    </li>
-                    <li class="nav-item mt-lg-1 ml-4">
-                        <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
-                                class="fas fa-globe" style="color:black"></i></a>
-                    </li>
-                </ul>
-                {{--            <ul class="navbar-nav mt-2 mt-lg-0">--}}
-                {{--                <li class="nav-item">--}}
-                {{--                    <a class="nav-link" href="{{route('login')}}">Войти</a>--}}
-                {{--                </li>--}}
-                {{--                <li class="nav-item">--}}
-                {{--                    <form action="{{ route('logout') }}" method="post">--}}
-                {{--                        @csrf--}}
-                {{--                        @method('POST')--}}
-                {{--                        <input class="btn btn-outline-primary" type="submit" value="Выйти">--}}
-                {{--                    </form>--}}
-                {{--                </li>--}}
-                {{--            </ul>--}}
-            </div>
-        </nav>
-{{--    </div>--}}
+    {{--    <div class="container">--}}
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="flex-wrap: nowrap">
+        <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}"
+                                                                         alt="Кантилена" style="width: 12%">
+            <img
+                src="{{asset('assets/images/Гардения2.jpeg')}}"
+                alt="Кантилена" style="width: 20%"></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
+                aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="edicaMainNav">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/about" style="white-space: nowrap">О нас</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/posts">Новости</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Медиа</a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="/image">Галерея</a>
+                        <a class="dropdown-item" href="/video">Видео</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contacts">Контакты</a>
+                </li>
+                <li class="nav-item mt-lg-1 ml-4">
+                    <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
+                                                                                          style="color:black"></i></a>
+                </li>
+                <li class="nav-item mt-lg-1 ml-4">
+                    <a href="https://www.instagram.com/kantilena_hor?igsh=MXFveXptZWhvbjFlNA=="><i
+                            class="fab fa-instagram"
+                            style="color:black"></i></a>
+                </li>
+                <li class="nav-item mt-lg-1 ml-4">
+                    <a href="https://uk.minsk.gov.by/shkoly/guo-detskaya-muzykalnaya-shkola-iskusstv-5-g-minska"><i
+                            class="fas fa-globe" style="color:black"></i></a>
+                </li>
+            </ul>
+            {{--            <ul class="navbar-nav mt-2 mt-lg-0">--}}
+            {{--                <li class="nav-item">--}}
+            {{--                    <a class="nav-link" href="{{route('login')}}">Войти</a>--}}
+            {{--                </li>--}}
+            {{--                <li class="nav-item">--}}
+            {{--                    <form action="{{ route('logout') }}" method="post">--}}
+            {{--                        @csrf--}}
+            {{--                        @method('POST')--}}
+            {{--                        <input class="btn btn-outline-primary" type="submit" value="Выйти">--}}
+            {{--                    </form>--}}
+            {{--                </li>--}}
+            {{--            </ul>--}}
+        </div>
+    </nav>
+    {{--    </div>--}}
 </header>
 
 @yield('content')
@@ -90,8 +90,21 @@
                     <img src="{{asset('assets/images/kant.svg')}}" alt="logo">
                 </a>
                 <p class="contact-details">Образцовый хор "Кантилена"</p>
-                <p class="contact-details">kantilena.music@gmail.com</p>
-                {{--                <p class="contact-details">kantilena-minsk@ya.ru</p>--}}
+                {{--                <p class="contact-details">kantilena.music@gmail.com</p>--}}
+                <p class="contact-details">kantilena-minsk@ya.ru</p>
+
+                <div class="footer-bottom-nav pt-3">
+
+                    <a href="https://uk.minsk.gov.by/" class="footer-brand-wrapper d-inline">
+                        <img src="{{asset('assets/images/Minsk2.png')}}" alt="logo"
+                             style="width: 25%">
+                    </a>
+                    <a href="https://uk.minsk.gov.by/" class="footer-brand-wrapper d-inline pl-3">
+                        <img src="{{asset('assets/images/rb.png')}}" alt="logo" style="width: 30%">
+                    </a>
+                </div>
+
+
                 <nav class="footer-social-links">
                     <a href="https://www.youtube.com/channel/UCpec_AHsTNLEUDRa87h0XdA"><i class="fab fa-youtube"
                                                                                           style="color:black"></i></a>
