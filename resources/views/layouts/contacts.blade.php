@@ -21,8 +21,9 @@
                     <h1 class="edica-page-title" data-aos="fade-up">Контакты</h1>
                     <section class="edica-contact py-5 mb-5">
                         <div class="row">
-                            <form method="post" action="{{ route('contacts.send') }}" class="row">
+                            <form method="post" action="{{ route('contacts.send') }}" class="row" enctype="multipart/form-data">
                                 @csrf
+                                @method('post')
                                 <div class="col-md-8 contact-form-wrapper">
                                     <div class="row">
                                         <div class="form-group col-md-6" data-aos="fade-up">
@@ -34,7 +35,7 @@
                                         <div class="form-group col-md-6" data-aos="fade-up">
                                             <label for="phone">НОМЕР ТЕЛЕФОНА</label>
                                             <input type="text" class="form-control" id="phone" name="phone"
-                                                   placeholder="Номер телефона">
+                                                   placeholder="Номер телефона" required maxlength="50" value="{{ old('phone') ?? '' }}">
                                         </div>
                                     </div>
                                     <div class="row">

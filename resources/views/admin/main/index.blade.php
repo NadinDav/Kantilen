@@ -60,6 +60,19 @@
                             <a href="{{ route('admin.category.index') }}" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-fuchsia">
+                            <div class="inner">
+                                <h3>{{ $data['tagsCount'] }}</h3>
+                                <p>Тэги</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa solid fa-tag"></i>
+                            </div>
+                            <a href="{{ route('admin.tag.index') }}" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
                     <!-- ./col -->
                     <div class="col-lg-3 col-6">
                         <!-- small box -->
@@ -72,6 +85,19 @@
                                 <i class="fa solid fa-image"></i>
                             </div>
                             <a href="{{ route('admin.image.index') }}" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <!-- small box -->
+                        <div class="small-box bg-orange">
+                            <div class="inner">
+                                <h3>{{ $data['awardsCount'] }}</h3>
+                                <p>Награды</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fa solid fa-trophy"></i>
+                            </div>
+                            <a href="{{ route('admin.award.index') }}" class="small-box-footer">Подробнее <i class="fas fa-arrow-circle-right"></i></a>
                         </div>
                     </div>
                     <!-- ./col -->

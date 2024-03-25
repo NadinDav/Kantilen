@@ -32,8 +32,13 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Главная<span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="/about" style="white-space: nowrap">О нас</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/about" id="pagesDropdown" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">Коллектив</a>
+                    <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+                        <a class="dropdown-item" href="/about">О нас</a>
+                        <a class="dropdown-item" href="/award">Наши награды</a>
+                    </div>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/posts">Новости</a>

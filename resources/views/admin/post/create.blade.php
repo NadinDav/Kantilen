@@ -24,7 +24,7 @@
                 <!-- Small boxes (Stat box) -->
                 <div class="row">
                     <div class="col-12">
-                        <form action="{{route('admin.post.store')}}" method="post" enctype="multipart/form-data">
+                        <form action="{{route('admin.post.store')}}" method="post">
                             @csrf
                             <div class="form-group w-25">
                                 <input type="text" class="form-control" name="title" placeholder="Название новости"

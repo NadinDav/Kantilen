@@ -48,6 +48,14 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="/admin/awards" class="nav-link">
+                        <i class="nav-icon fa solid fa-trophy"></i>
+                        <p>
+                            Награды
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="/admin/users" class="nav-link">
                         <i class="nav-icon fa solid fa-user"></i>
                         <p>

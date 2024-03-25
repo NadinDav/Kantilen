@@ -29,7 +29,7 @@
                     <section class="edica-about-vision py-5">
                         <div class="row">
                             <div class="col-md-6 pb-3 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-delay="200">
-                                <img src=" {{asset('assets/images/024-228.jpg')}}" alt="vision" class="img-fluid">
+                                <img src=" {{asset('assets/images/024-229.jpg')}}" alt="vision" class="img-fluid">
                             </div>
                             <div class="col-md-6 d-flex flex-column justify-content-center">
                                 <h2 class="vision-title" data-aos="fade-left">Руководитель</h2>

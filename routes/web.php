@@ -69,6 +69,17 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin', 'namespace' => 'App\H
         Route::delete('/{image}', 'PostController@destroy')->name('admin.image.destroy');
 
     });
+    Route::group(['namespace' => 'Award', 'prefix' => 'awards'], function () {
+
+        Route::get('/', 'PostController')->name('admin.award.index');
+        Route::get('/create', 'PostController@create')->name('admin.award.create');
+        Route::post('/', 'PostController@store')->name('admin.award.store');
+        Route::get('/{award}', 'PostController@show')->name('admin.award.show');
+        Route::get('/{award}/edit', 'PostController@edit')->name('admin.award.edit');
+        Route::patch('/{award}', 'PostController@update')->name('admin.award.update');
+        Route::delete('/{award}', 'PostController@destroy')->name('admin.award.destroy');
+
+    });
 
     Route::group(['namespace' => 'User', 'prefix' => 'users'], function () {
 
@@ -93,10 +104,13 @@ Route::get('/about', function () {
 Route::get('/video', function () {
     return view('image.show');
 });
+
 Route::get('/contacts', '\App\Http\Controllers\FeedbackController@index')->name('contacts.index');
 Route::post('/contacts', '\App\Http\Controllers\FeedbackController@send')->name('contacts.send');
 
 Route::get('/image', \App\Http\Controllers\Main\ImageController::class);
+Route::get('/award', \App\Http\Controllers\Main\AwardController::class);
+
 
 Route::group(['namespace' => 'App\Http\Controllers\Main'], function () {
     Route::get('/posts', \App\Http\Controllers\Main\PostController::class);
