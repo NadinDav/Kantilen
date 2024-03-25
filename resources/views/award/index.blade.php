@@ -2,7 +2,7 @@
 @section('content')
     <main class="blog">
         <div class="container">
-            <h1 class="edica-page-title" data-aos="fade-up">Награды</h1>
+            <h1 class="edica-page-title" data-aos="fade-up">Наши награды</h1>
             <section class="featured-posts-section">
                 <div class="row">
                     @foreach($awards as $award)
