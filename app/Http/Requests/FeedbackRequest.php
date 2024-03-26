@@ -22,7 +22,7 @@ class FeedbackRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'email' => 'required|unique:feedback|max:100'
+            //
         ];
     }
 }

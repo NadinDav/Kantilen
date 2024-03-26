@@ -96,7 +96,7 @@
                 </a>
                 <p class="contact-details">Образцовый хор "Кантилена"</p>
                 {{--                <p class="contact-details">kantilena.music@gmail.com</p>--}}
-                <p class="contact-details">kantilena-minsk@ya.ru</p>
+                <p class="contact-details">choir@kantilena.by</p>
 
                 <div class="footer-bottom-nav pt-3">
 
