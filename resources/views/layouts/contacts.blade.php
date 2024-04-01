@@ -17,9 +17,9 @@
     <main>
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 mx-auto">
+                <div class="col-lg-11 mx-auto" >
                     <h1 class="edica-page-title" data-aos="fade-up">Контакты</h1>
-                    <section class="edica-contact py-5 mb-5">
+                    <section class="edica-contact pb-5 mb-5" style="margin-left: 15px; margin-right: 15px">
                         <div class="row">
                             <form method="post" action="{{ route('contacts.send') }}" class="row" enctype="multipart/form-data">
                                 @csrf
@@ -64,7 +64,7 @@
                                     </button>
                                 </div>
 
-                                <div class="col-md-4 contact-sidebar" data-aos="fade-left">
+                                <div class="col-md-4 contact-sidebar mt-3" data-aos="fade-left">
                                     <h5>Наш адрес</h5>
                                     <p>Образцовый хор "Кантилена", г.Минск, создан на базе ГУО «Детская музыкальная школа
                                         искусств № 5 г. Минска»</p>

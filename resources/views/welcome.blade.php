@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
-
     <header class="edica-header ">
+
         <div class="edica-landing-header-content relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
             <div id="edicaLandingHeaderCarousel" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -14,9 +14,9 @@
                         <div class="card bg-dark text-center mx-auto max-w-6xl px-6 lg:px-6">
                             <img class="card-img" src="{{asset('img/фон10.jpg')}}" alt="Card image">
                             <div class="position-absolute card-img-overlay" style="margin-top: 8%">
-                                <h1 style="letter-spacing: 10px; color: #e6e1f281; font-size: 10vw;">Образцовый хор
+                                <h1 style="letter-spacing: 9px; color: #e6e1f281; font-size: 10vw;">Образцовый хор
                                     "Кантилена"</h1>
-                                <h3 class="card-text">Детской музыкальной школы искусств №5 г.Минска</h3>
+                                <h3 class="card-text" style="letter-spacing: 5px; font-size: 3vw;">Детской музыкальной школы искусств №5 г.Минска</h3>
                             </div>
                         </div>
                     </div>
@@ -26,7 +26,7 @@
                             <div class="card-img-overlay" style="margin-top: 8%">
                                 <h1 style="letter-spacing: 10px; color: #e6e1f2; font-size: 5vw;">"Кантилена" — хор,
                                     объединяющий души!</h1>
-                                <h3>Детский хор - путевка в жизнь через музыку и любовь!</h3>
+                                <h3 style="letter-spacing: 5px; font-size: 3vw;">Детский хор - путевка в жизнь через музыку и любовь!</h3>
                             </div>
                         </div>
                     </div>
@@ -74,29 +74,29 @@
                 <h4 class="edica-landing-section-subtitle">Наш репертуар</h4>
                 <h2 class="edica-landing-section-title">Лучшие произведения музыкальной классики</h2>
                 <div class="row">
-                    <div class="col-md-6 blog-post mb-1" data-aos="fade-right">
-                        <iframe width="560" height="315"
+                    <div class="col-md-6 blog-post mb-2" data-aos="fade-right">
+                        <iframe width="560" height="315" class="w-100"
                                 src="https://www.youtube.com/embed/frc1wGmjfa0?si=GPNWMAUChoAIUx9M"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-6 blog-post mb-1" data-aos="fade-left">
-                        <iframe width="560" height="315"
+                    <div class="col-md-6 blog-post mb-2" data-aos="fade-left">
+                        <iframe width="560" height="315" class="w-100"
                                 src="https://www.youtube.com/embed/jh3aiYGgcA0?si=OtD6KJaYK_S_cX3F"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-6 blog-post mb-1" data-aos="fade-right">
-                        <iframe width="560" height="315"
+                    <div class="col-md-6 blog-post mb-2" data-aos="fade-right">
+                        <iframe width="560" height="315" class="w-100"
                                 src="https://www.youtube.com/embed/FJAO6SWdibU?si=TAv1xdL84Ap718iD"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                 allowfullscreen></iframe>
                     </div>
-                    <div class="col-md-6 blog-post mb-1" data-aos="fade-left">
-                        <iframe width="560" height="315"
+                    <div class="col-md-6 blog-post mb-2" data-aos="fade-left">
+                        <iframe width="560" height="315" class="w-100"
                                 src="https://www.youtube.com/embed/VMpgVbN3FDw?si=KMx0aYZ022jXIU-O"
                                 title="YouTube video player" frameborder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -212,6 +212,7 @@
             </div>
         </section>
     </main>
+
 @endsection
 
 

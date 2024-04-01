@@ -17,12 +17,12 @@
 <div class="edica-loader"></div>
 <header class="edica-header">
     {{--    <div class="container">--}}
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent" style="flex-wrap: nowrap">
-        <a class="navbar-brand" href="/" style="margin-right: -7px"><img src="{{asset('assets/images/kant.svg')}}"
-                                                                         alt="Кантилена" style="width: 12%">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <a class="navbar-brand" href="/"><img src="{{asset('assets/images/kant.svg')}}"
+                                              alt="Кантилена" style="width: 20%">
             <img
                 src="{{asset('assets/images/Гардения2.jpeg')}}"
-                alt="Кантилена" style="width: 20%"></a>
+                alt="Кантилена" style="width: 30%"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#edicaMainNav"
                 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
